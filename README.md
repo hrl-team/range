@@ -58,3 +58,6 @@ All behavioral data are stored in the raw matrix *data.mat*. The columns are ord
 * COLUMN 15: trial order (1:2)
   * 1 = interleaved trials
   * 2 = blocked trials
+
+## Functions   
+Files *SurfaceCurvePlotSmooth.m*, *SurfaceCurvePlotSmooth2.m*, *skylineplot.m* were created and used for visual purposes. Created by Sophie Bavard & Stefano Palminteri.
