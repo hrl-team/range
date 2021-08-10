@@ -210,7 +210,7 @@ for i = 1:length(s) % trial by trial
             
         elseif model == 3 % HABIT model
             
-            % In this script, we note A the Qvalue matrix and Q the arbiter
+            % In this script, we note P the Qvalue matrix and Q the arbiter
             % (noted D in the methods) because the softmax is performed
             % with the matrix Q.
             % Parameter alphaV represents habitual learning rate.
