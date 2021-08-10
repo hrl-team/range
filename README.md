@@ -4,7 +4,7 @@ This is the repository where I am storing the data and code used to generate beh
 Sophie Bavard, Aldo Rustichini, Stefano Palminteri   
 https://advances.sciencemag.org/content/7/14/eabe0340/
 
-## Behavioural analyses   
+## Behavioral analyses   
 Run the *behavioral_analyses.m* script to produce the *data_figures.mat*.   
 The script loads the raw matrix *data.mat* and extracts the variables of interest for the figures.
 
@@ -59,5 +59,11 @@ All behavioral data are stored in the raw matrix *data.mat*. The columns are ord
   * 1 = interleaved trials
   * 2 = blocked trials
 
+## Model fitting
+Participants' choices were modeled using likelihood maximization. Run the *Model_Fitting.m* script to fit the 4 models presented in the main text (ABSOLUTE, RANGE, HABIT, UTILITY models). The script uses *data.mat* and *function_model_fitting_simulations.m*, and saves fitted variables in the dedicated file *Optimization.mat*.
+
+## Model simulation
+Run the *Model_Simulation.m* script to produce generated data for each model. The script loads *Optimization.mat* and uses *function_model_fitting_simulations.m* to generate figures with data overlayed with model simulations. Optionally, the script saves the generated data in a dedicated file.
+
 ## Functions   
-Files *SurfaceCurvePlotSmooth.m*, *SurfaceCurvePlotSmooth2.m*, *skylineplot.m* were created and used for visual purposes. Created by Sophie Bavard & Stefano Palminteri.
+File *function_model_fitting_simulations.m* contains the algorithms used to fit and simulate the data for all 4 models presented in the main text. Files *SurfaceCurvePlotSmooth.m*, *SurfaceCurvePlotSmooth2.m*, *skylineplot.m*, *skylineplot_model.m*, *structure_matrix_to_plotmatrix.m*  were created and used for visual purposes. Created by Sophie Bavard & Stefano Palminteri.
